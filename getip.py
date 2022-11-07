@@ -14,14 +14,16 @@ class Getip:
                           'Chrome/52.0.2743.82 Safari/537.36',
         }
 
-    def get(self, site):
-        ip = self.chinaz(site)
+    @staticmethod
+    def get(site):
+        cls = Getip()
+        ip = cls.chinaz(site)
         if ip == '':
-            ip = self.ipapi(site)
+            ip = cls.ipapi(site)
         if ip == '':
-            ip = self.ipaddress(site)
+            ip = cls.ipaddress(site)
         if ip == '':
-            ip = self.whatismyipaddress(site)
+            ip = cls.whatismyipaddress(site)
         return ip
 
     def match(self, result: list) -> str:

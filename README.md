@@ -10,12 +10,12 @@
 在windows中设置定时任务
 
 ![help1][1]
-![help1][1]
-![help1][1]
-![help1][1]
+![help1][2]
+![help1][3]
+![help1][4]
 
 
   [1]: docs/help1.png
-  [1]: docs/help2.png
-  [1]: docs/help3.png
-  [1]: docs/help4.png
+  [2]: docs/help2.png
+  [3]: docs/help3.png
+  [4]: docs/help4.png
