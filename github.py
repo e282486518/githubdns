@@ -24,6 +24,8 @@ host_window = r"C:\Windows\System32\drivers\etc\hosts"
 host_unix = r"/etc/hosts"
 api_host = "https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts"
 
+
+# https://tool.chinaz.com/dns?type=1&host=github.com
 def get_http_content():
     """查询dns github最佳解析路线"""
     # noinspection HttpUrlsUsage
