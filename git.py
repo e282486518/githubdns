@@ -54,11 +54,11 @@ def set_host():
     for domain in json_obj['sites']:
         ip = getip.Getip.get(domain)
         hosts += ip + '    ' + domain + '\n'
-    print(hosts)
+    # print(hosts)
     # 从本地读取文件内容
     local = read_host()
-    ret = re.sub(r'# ==== GitHub Host Start ====([.|\S|\s]*)# ==== GitHub Host End ====', '', local, 0, re.M)
-    print(ret)
+    local = re.sub(r'# ==== GitHub Host Start ====([.|\S|\s]*)# ==== GitHub Host End ====', '', local, 0, re.M)
+    # print(ret)
     # 合并内容
     host_text = '\n'.join([
         local,

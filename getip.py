@@ -16,14 +16,16 @@ class Getip:
 
     @staticmethod
     def get(site):
-        cls = Getip()
-        ip = cls.chinaz(site)
+        cls1 = Getip()
+        ip = ''
         if ip == '':
-            ip = cls.ipapi(site)
+            ip = cls1.chinaz(site)
         if ip == '':
-            ip = cls.ipaddress(site)
+            ip = cls1.ipapi(site)
         if ip == '':
-            ip = cls.whatismyipaddress(site)
+            ip = cls1.ipaddress(site)
+        if ip == '':
+            ip = cls1.whatismyipaddress(site)
         return ip
 
     def match(self, result: list) -> str:
