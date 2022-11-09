@@ -53,7 +53,7 @@ def set_host():
     hosts = ''
     for domain in json_obj['sites']:
         ip = getip.Getip.get(domain)
-        hosts += ip + '    ' + domain + '\n'
+        hosts += f"{ip:<30}{domain} \n"
     # print(hosts)
     # 从本地读取文件内容
     local = read_host()
